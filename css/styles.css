@@ -15,10 +15,7 @@ body {
    left: 50%;
    transform: translate(-50%, -50%)
 }
-#about-us {
-  text-align: center;
-}
-#row {
+#about {
   text-align: center;
 }
 .menu {
