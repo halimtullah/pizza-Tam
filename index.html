@@ -5,47 +5,92 @@
     <meta name="viewport" content="width=device, intial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
     <title>pizza Tam</title>
 </head>
 
- <body>
-     <div class="home"> 
-        <div class="display">
-     <nav>
-         <ul>
-            <img src="image/logo/logo.png" >
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about us">ABOUT US</a></li>
-            <li><a href="#menu">MENU</a></li>
-            <li><a href="#checkout">CHECKOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-        </ul>
-        <h1>pizza Tam</h1>
-        </div>
-    </nav>
-</div>
-<div class="menu">
-    <div class="row">
-      <div class="col-md-12">
-    <img src="">
+ <body>   
+        <div class="header">
+            <a href="#default" class="logo">PIZZA TAM</a>
+            <div class="header-right">
+              <a class="active" href="#home">HOME</a>
+              <a href="#about">ABOUT</a>
+              <a href="#menu">MENU</a>
+              <a href="#contact">CONTACT</a>
+            </div>
+          </div>
+     <div class="landing">
+         <img src="image/logo/quality.jpg" >
+         <h1>WELCOME PIZZA TAM </h1>
+         <P>At your comfort you order we deliver it to your doorstep. </P>
+         </div>
+
+     <div class="about">
+         <h1>ABOUT US</h1>
+         <p>We offer delicious and unique pizza Also our pizzas are made with thin crusts, lots of toppings and perfect blended of sauces.</p>
+         <p>The bread, the cheese and toppings steaming hot, fresh out of the oven is the recepie for a perfect pizza</p>
+         <p>We strive hard to meet out the commitment and to deliver high quality food to our  customers by choosing the right quality.</p> 
+     </div>
+       
+     <h1>MENU</h1>
+      <div class="menu">
+        <div class="row">
+        <div class="col-md-3">
+      <img src="image/menu/p1.jpg">
+        <p>Periperi</p>
+       </div>
+       <div class="col-md-3">
+        <img src="image/menu/p2.jpg">
+          <p>Chicken</p>
+      </div>
+     <div class="col-md-3">
+       <img src="image/menu/p3.jpg">
+       <p>BBQ</p>
+    </div>
+    <div class="col-md-3">
+    <img src="image/menu/p4.jpeg">
+    <p>Vegetable</p> 
+   </div>
   </div>
+ </div>
+<form>
+    <div class="form-group">
+       <label for="size">Pizza Size</label>
+       <input id="size" class="form-control" type="text">
+       <select></select>
+    </div>
+</form>
+<div class="orders">
+    <h2>Orders</h2>
+    <div class="form-group">
+        <div class="col-sm-4">
+        <label>Chose the Size your want:</label>
+        <select class="custom-select custom-select-md mb-3" >
+        <option value="small">Small @ sh.550</option>
+        <option value="medium">Medium @ sh.800</option>
+        <option value="large">Large @ sh.1150</option>
+        </select>
+        <label>Choose your crust</label>
+        <select class="custom-select custom-select-md mb-3">
+         <option value="crispy">crispy</option>
+         <option value="gluten-free">Gluten-free</option>
+         <option value="stuffed">Stuffed</option>
+       </select>
+        
+            <label>Select your toppings</label>
+            <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                <option value="Extra cheese">Extra cheese @ sh. 100</option>
+                <option value="onions">Onions @ sh. 100</option>
+                <option value="tomato">tomato @ sh. 100</option>
+                <option value="saugage">sausage @ sh. 100</option>
+                <option value="Green peppers">Green pepper @ sh. 100</option>
+            </select>
+        </div>
+
+    </div>
 </div>
-<div class="col-md-12">
-    <img src="">
-</div>
-<div class="col-md-12">
-    <img src="">
-</div>
-<div class="col-md-12">
-    <img src="">
-</div>
-<div class="col-md-12">
-    <img src="">
-</div>
-<div class="col-md-12">
-    <img src="">
-</div>
-    
+
+
 <div class="contact">
     <h8> 
         CONTACT US</h8>
@@ -54,13 +99,17 @@
         <input type="text" class="" name="" value="" required="">
         <label for="email"></label>
         <input type="email" class="" name="" value="" required="">
+        <label for="message"></label>
     </div>
 
     <button type="submit" class="submit">Submit</button>
 
    </div> 
   
-</form>
-     
+
+       <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+       <script src="js/bootstrap.js"></script>
+       <script src="js/scripts.js"></script>
+
 </body>
 </html>
