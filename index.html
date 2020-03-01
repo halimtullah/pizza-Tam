@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device, intial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
@@ -9,107 +10,114 @@
     <title>pizza Tam</title>
 </head>
 
- <body>   
-        <div class="header">
-            <a href="#default" class="logo">PIZZA TAM</a>
-            <div class="header-right">
-              <a class="active" href="#home">HOME</a>
-              <a href="#about">ABOUT</a>
-              <a href="#menu">MENU</a>
-              <a href="#contact">CONTACT</a>
-            </div>
-          </div>
-     <div class="landing">
-         <img src="image/logo/quality.jpg" >
-         <h1>WELCOME PIZZA TAM </h1>
-         <P>At your comfort you order we deliver it to your doorstep. </P>
-         </div>
+<body>
+    <div class="header">
+        <a href="#default" class="logo">PIZZA TAM</a>
+        <div class="header-right">
+            <a class="active" href="#home">HOME</a>
+            <a href="#about us">ABOUT US</a>
+            <a href="#menu">MENU</a>
+            <a href="#orders">ORDERS</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </div>
+    <div class="landing">
+        <img src="image/pizza/maker.png" height="1000px">
+        <div class="centered">
+        <h1>WELCOME PIZZA TAM </h1>
+        <P>At your comfort you order we deliver it to your doorstep. </P>
+    </div>
+    </div>
 
-     <div class="about">
-         <h1>ABOUT US</h1>
-         <p>We offer delicious and unique pizza Also our pizzas are made with thin crusts, lots of toppings and perfect blended of sauces.</p>
-         <p>The bread, the cheese and toppings steaming hot, fresh out of the oven is the recepie for a perfect pizza</p>
-         <p>We strive hard to meet out the commitment and to deliver high quality food to our  customers by choosing the right quality.</p> 
-     </div>
-       
-     <h1>MENU</h1>
-      <div class="menu">
+    <div class="about">
+        <h1>ABOUT US</h1>
+        <p>We offer delicious and unique pizza Also our pizzas are made with thin crusts, lots of toppings and perfect blended of sauces.</p>
+        <p>The bread, the cheese and toppings steaming hot, fresh out of the oven is the recepie for a perfect pizza</p>
+        <p>We strive hard to meet out the commitment and to deliver high quality food to our customers by choosing the right quality.</p>
+    </div>
+
+    <h1>MENU</h1>
+    <div class="menu">
         <div class="row">
-        <div class="col-md-3">
-      <img src="image/menu/p1.jpg">
-        <p>Periperi</p>
-       </div>
-       <div class="col-md-3">
-        <img src="image/menu/p2.jpg">
-          <p>Chicken</p>
-      </div>
-     <div class="col-md-3">
-       <img src="image/menu/p3.jpg">
-       <p>BBQ</p>
+            <div class="col-md-3">
+                <img src="image/menu/p1.jpg" height="300px" width="300px">
+                <p>Periperi</p>
+            </div>
+            <div class="col-md-3">
+                <img src="image/menu/p2.jpg" height="300px" width="300px">
+                <p>Chicken Tikka</p>
+            </div>
+            <div class="col-md-3">
+                <img src="image/menu/p3.jpg" height="300px" width="300px">
+                <p>BBQ</p>
+            </div>
+            <div class="col-md-3">
+                <img src="image/menu/p4.jpeg" height="300px" width="300px">
+                <p>Veg Tikka</p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-3">
-    <img src="image/menu/p4.jpeg">
-    <p>Vegetable</p> 
-   </div>
-  </div>
- </div>
-<form>
-    <div class="form-group">
-       <label for="size">Pizza Size</label>
-       <input id="size" class="form-control" type="text">
-       <select></select>
+
+    <div class="orders">
+        <h2>ORDERS</h2>
+        <div class="form-group">
+            <div class="col-sm-4">
+                <label>Choose the Size your want:</label>
+                <select class="custom-select custom-select-md mb-3">
+                    <option value="regular">Regular @ sh.550</option>
+                    <option value="medium">Medium @ sh.900</option>
+                    <option value="large">Large @ sh.1150</option>
+                </select>
+
+                <label>Choose your crust</label>
+                <select class="custom-select custom-select-md mb-3">
+                    <option value="crispy">crispy</option>
+                    <option value="gluten-free">Gluten-free</option>
+                    <option value="stuffed">Stuffed</option>
+                </select>
+
+                <label>Select your toppings</label>
+                <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                    <option value="pepperoni">Pepperoni</option>
+                    <option value="mushroom">Mushroom</option>
+                    <option value="Extra cheese">Extra cheese @ sh. 60</option>
+                    <option value="onions">Onions @ sh. 60</option>
+                    <option value="tomato">tomato @ sh. 60</option>
+                    <option value="saugage">sausage @ sh. 60</option>
+                    <option value="Green peppers">Green pepper @ sh. 0</option>
+                </select>
+
+                <label for="number">Number OF Pizza</label>
+                <input type="number" class="form-control">
+
+                <button type="submit" class="btn btn-success checkout">Checkout</button>
+                    
+                <button class="deliver">Delivery</button>
+                <button class="pick up">pick up</button>
+            </div>
+        </div>
     </div>
-</form>
-<div class="orders">
-    <h2>Orders</h2>
-    <div class="form-group">
-        <div class="col-sm-4">
-        <label>Chose the Size your want:</label>
-        <select class="custom-select custom-select-md mb-3" >
-        <option value="small">Small @ sh.550</option>
-        <option value="medium">Medium @ sh.800</option>
-        <option value="large">Large @ sh.1150</option>
-        </select>
-        <label>Choose your crust</label>
-        <select class="custom-select custom-select-md mb-3">
-         <option value="crispy">crispy</option>
-         <option value="gluten-free">Gluten-free</option>
-         <option value="stuffed">Stuffed</option>
-       </select>
-        
-            <label>Select your toppings</label>
-            <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                <option value="Extra cheese">Extra cheese @ sh. 100</option>
-                <option value="onions">Onions @ sh. 100</option>
-                <option value="tomato">tomato @ sh. 100</option>
-                <option value="saugage">sausage @ sh. 100</option>
-                <option value="Green peppers">Green pepper @ sh. 100</option>
-            </select>
+
+        <div class="contact">
+            <h8>
+                CONTACT US</h8>
+            <div class="txtb">
+                <label for="name">Name</label>
+                <input type="text" class="" name="" value="" required="">
+                <label for="email">Email</label>
+                <input type="email" class="" name="" value="" required="">
+                <label for="message"></label>
+                <textarea name="message"></textarea>
+            </div>
+
+            <button type="submit" class="submit">Submit</button>
+
         </div>
 
-    </div>
-</div>
-
-
-<div class="contact">
-    <h8> 
-        CONTACT US</h8>
-    <div class="txtb">
-        <label for="name"></label>
-        <input type="text" class="" name="" value="" required="">
-        <label for="email"></label>
-        <input type="email" class="" name="" value="" required="">
-        <label for="message"></label>
-    </div>
-
-    <button type="submit" class="submit">Submit</button>
-
-   </div> 
-  
-
-       <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-       <script src="js/bootstrap.js"></script>
-       <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/scripts.js"></script>
 
 </body>
+
 </html>
