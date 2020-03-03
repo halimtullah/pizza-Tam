@@ -71,7 +71,10 @@ body {
 }
 .contact {
   background: url("../image/backgrounds/stock.jpg");
-  width: 100%;
   position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: black;
   text-align: center;
 }
