@@ -11,14 +11,14 @@ var pizzaTopping = ["Pepperoni","Mushroom","Extracheese","Onion","Tomato","Sausa
 
 
 
-$(document).ready(function() {
-    $("form").submit(function(event) {
-    var name=$("input#name").val();
-    var email=$("input#email").val();
-    var message=$("input#message").val();
-    alert(name + "Thank you for contacting us.");
+// $(document).ready(function() {
+//     $("form").submit(function(event) {
+//     var name=$("input#name").val();
+//     var email=$("input#email").val();
+//     var message=$("input#message").val();
+//     alert(name + "Thank you for contacting us.");
     
-    event.preventDefault();
-    });
- });
+//     event.preventDefault();
+//     });
+//  });
 
