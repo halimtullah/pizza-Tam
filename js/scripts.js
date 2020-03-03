@@ -4,9 +4,9 @@ function order(size, crust, topping) {
     this.topping = topping;
     this.total = 0;
 }
-// var pizzaSize = ["regular","medium","large"]
-// var pizzaCrust = ["Crispy","Gluten-free","Stuffed"]
-// var pizzaTopping = ["Pepperoni","Mushroom","Extracheese","Onion","Tomato","Sausage","Greenpepper"]
+var pizzaSize = ["regular","medium","large"]
+var pizzaCrust = ["Crispy","Gluten-free","Stuffed"]
+var pizzaTopping = ["Pepperoni","Mushroom","Extracheese","Onion","Tomato","Sausage","Greenpepper"]
 
 
 
