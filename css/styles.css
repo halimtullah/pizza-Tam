@@ -69,3 +69,9 @@ body {
    float: none;
  }
 }
+.contact {
+  background: url("../image/backgrounds/stock.jpg");
+  width: 100%;
+  position: relative;
+  text-align: center;
+}

@@ -101,30 +101,43 @@
                 <label for="number">Number OF Pizza</label>
                 <input type="number" class="form-control">
 
-                <button type="submit" class="btn btn-success checkout">Checkout</button>
-                <br>
+                <a href="#summary">
+                   <button type="submit" class="btn btn-success checkout">Checkout</button>
+                </a>
+                <div class="d-block mx auto text-center">
                 <button class="deliver">Delivery</button>
                 <button class="pick up">pick up</button>
-                <br>
+            </div>
             </div>
         </div>
     </div>
-
+     <form action="image/backgrounds/stock.jpg">
         <div class="contact">
             <h8>
                 CONTACT US</h8>
             <div class="txtb">
                 <label for="name">Name</label>
-                <input type="text" class="" name="" value="" required="">
+                <input type="text" class="" name="" value="" placeholder="your name...">
+            </div>
+            <div class="txtb">
                 <label for="email">Email</label>
-                <input type="email" class="" name="" value="" required="">
-                <label for="message"></label>
-                <textarea name="message"></textarea>
+                <input type="email" class="" name="" value="" placeholder="email...">
+            </div>
+            <div class="txtb1">
+                <label for="name">Message</label>
+                <textarea name="comments" id="" cols="30" row="10"></textarea>
+            </div>
+            <div class="txb1">
+                <input type="number" id="phone" class="form-control mb-3" placeholder="phone Number">
+
+             
+
             </div>
 
             <button type="submit" class="submit">Submit</button>
 
         </div>
+    </form>
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/bootstrap.js"></script>

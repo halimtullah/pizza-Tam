@@ -1,7 +1,7 @@
 ## PIZZA TAM
 
 ## Description.
-This a pizza web application
+This a pizza web application.
 ## author
 Khadija Hassan
 
