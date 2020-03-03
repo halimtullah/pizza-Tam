@@ -1,14 +1,30 @@
-function ordery(size, crust, topping) {
-    this.size = size;
-    this.crust = crust;
-    this.topping = topping;
-    this.total = 0;
-}
 var pizzaSize = ["regular","medium","large"]
 var pizzaCrust = ["Crispy","Gluten-free","Stuffed"]
 var pizzaTopping = ["Pepperoni","Mushroom","Extracheese","Onion","Tomato","Sausage","Greenpepper"]
 
 
+function getSize() {
+    var pizzaSize = document.getElementById("size").value;
+    return parseInt(pizzaSize);
+}
+function getCrust() {
+    var pizzaCrust = document.getElementById("crust").value;
+    return parseInt(pizzaCrust);
+}
+function getToppings() {
+    var pizzaTopping = document.getElementById("toppings").value;
+    return parseInt(pizzaTopping);
+}
+function getTotal() {
+    var pizzaQuantity = document.getElementById("number").value;
+    return parseInt(pizzaQuantity);
+}
+function getTotalCost() {
+    var TotalCost =(getSize()+getCrust()+getToppings())+getTotal();
+    alert("You order"+getTotal("")+ "pizza" + ""+"Total Amount ksh"+(TotalCost)+""+"dear customer thank you for choosing us.")
+alert("cost for delivery is 150sh");
+alert("You order will be delivered shortly");
+};
 
 
 $(document).ready(function() {

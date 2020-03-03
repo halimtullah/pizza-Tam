@@ -63,46 +63,46 @@
         <div class="form-group">
             <div class="col-sm-4">
                 <label> choose your pizza type</label>
-                <select class="custom-select custom-select-md mb-3" id ="pizza" required>
-                    <option value="">Periperi</option>
-                    <option value="">Chicken and mushroom</option>
-                    <option value="">Chicken Tikka</option>
-                    <option value="">Hawaiin</option>
-                    <option value="">BBQ Steak</option>
-                    <option value="">Boerewors</option>
-                    <option value="">Veg Tikka</option>
+                <select class="custom-select custom-select-md mb-3" required="">
+                    <option value="960">Periperi</option>
+                    <option value="950">Chicken and mushroom</option>
+                    <option value="980">Chicken Tikka</option>
+                    <option value="960">Hawaiin</option>
+                    <option value="1000">BBQ Steak</option>
+                    <option value="920">Boerewors</option>
+                    <option value="800">Veg Tikka</option>
                 </select>
 
                 <label>Choose the Size your want:</label>
-                <select class="custom-select custom-select-md mb-3">
+                <select class="custom-select custom-select-md mb-3" id="size" required="">
                     <option value="550">Regular @ sh.550</option>
                     <option value="900">Medium @ sh.900</option>
                     <option value="1150">Large @ sh.1150</option>
                 </select>
 
                 <label>Choose your crust</label>
-                <select class="custom-select custom-select-md mb-3" id ="crust" required>
+                <select class="custom-select custom-select-md mb-3" id ="crust" required="">
                     <option value="100">crispy</option>
                     <option value="90">Gluten-free</option>
                     <option value="80">Stuffed</option>
                 </select>
 
                 <label>Select your toppings</label>
-                <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                <select class="custom-select custom-select-md mb-3" id="toppings" required="">
                     <option value="60">Pepperoni @ sh. 60</option>
                     <option value="60">Mushroom @ sh. 60</option>
-                    <option value="60">Extra cheese @ sh. 60</option>
+                    <option value="80">Extra cheese @ sh. 80</option>
                     <option value="60">Onions @ sh. 60</option>
                     <option value="60">tomato @ sh. 60</option>
-                    <option value="60">sausage @ sh. 60</option>
+                    <option value="100">sausage @ sh. 100</option>
                     <option value="60">Green pepper @ sh. 60</option>
                 </select>
 
                 <label for="number">Number OF Pizza</label>
-                <input type="number" class="form-control">
+                <input type="number" class="form-control" id="number" min="1" max="20">
 
                 <a href="#summary">
-                    <button type="submit" class="btn btn-success checkout">Checkout</button>
+                    <button type="submit" class="btn btn-success checkout" onclick="getTotalCost();">Checkout</button>
                 </a>
                 <div class="d-block mx auto text-center">
                     <button class="deliver">Delivery</button>
