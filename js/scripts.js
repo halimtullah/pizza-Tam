@@ -1,4 +1,4 @@
-function order(size, crust, topping) {
+function ordery(size, crust, topping) {
     this.size = size;
     this.crust = crust;
     this.topping = topping;
