@@ -6,7 +6,7 @@ This a pizza web application.
 Khadija Hassan
 
 ## Setup/ Installation Requirements
-* git clone 
+* git clone https://khadija-bit.github.io/pizza-Tam/.
 * install jQuery.
 * install visual studio code.
 

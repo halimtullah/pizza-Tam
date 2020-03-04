@@ -21,10 +21,15 @@ function getTotal() {
 }
 function getTotalCost() {
     var TotalCost =(getSize()+getCrust()+getToppings())+getTotal();
-    alert("You order"+getTotal("")+ "pizza" + ""+"Total Amount ksh"+(TotalCost)+""+"dear customer thank you for choosing us.")
+    alert("You order"+getTotal("")+ "pizza" + "")
+    alert("Total Amount ksh"+(TotalCost)+"")
+    alert("dear customer thank you for choosing us.")
     alert("cost for delivery is 150sh");
     alert("You order will be delivered shortly");
+     event.preventDefault()
 };
+
+
 
 
 $(document).ready(function() {
