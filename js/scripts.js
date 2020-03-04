@@ -16,14 +16,14 @@ function getToppings() {
     return parseInt(pizzaTopping);
 }
 function getTotal() {
-    var pizzaQuantity = document.getElementById("number").value;
-    return parseInt(pizzaQuantity);
+    var pizzaAmount = document.getElementById("number").value;
+    return parseInt(pizzaAmount);
 }
 function getTotalCost() {
     var TotalCost =(getSize()+getCrust()+getToppings())+getTotal();
     alert("You order"+getTotal("")+ "pizza" + ""+"Total Amount ksh"+(TotalCost)+""+"dear customer thank you for choosing us.")
-alert("cost for delivery is 150sh");
-alert("You order will be delivered shortly");
+    alert("cost for delivery is 150sh");
+    alert("You order will be delivered shortly");
 };
 
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
     var name=$("input#name").val();
     var email=$("input#email").val();
     var message=$("input#message").val();
-    alert(name + "Thank you for contacting us.");
+    alert("Thank you for contacting us.");
     
     event.preventDefault();
     });
